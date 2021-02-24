@@ -1,0 +1,27 @@
+{
+  "name": "indygopunctual.com",
+  "version": "1.0.0",
+  "description": "Track/analyze punctuality of IndyGo",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "node": "^15.8.0",
+    "postcss": "^8.2.6",
+    "tailwindcss": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:tailwind": "tailwind build css/home.css -o css/output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serviceberry3/indygo_punctuality.git"
+  },
+  "author": "Noah Weiner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serviceberry3/indygo_punctuality/issues"
+  },
+  "homepage": "https://github.com/serviceberry3/indygo_punctuality#readme"
+}

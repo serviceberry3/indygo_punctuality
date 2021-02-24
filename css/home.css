@@ -1,0 +1,13 @@
+@tailwind base;
+
+@tailwind components;
+
+.test-tw {
+  @apply bg-green-500
+}
+
+@tailwind utilities;
+
+p {
+    color: blue;
+}
