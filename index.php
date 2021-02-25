@@ -27,6 +27,21 @@
 
 			//$.get('php/get_route_data.php');
 		}, 10000);
+
+		setInterval(function () {
+			$.ajax({
+				url: 'php/update_total_time.php',
+				success:function (data) {
+					console.log(data);
+					//document.getElementById('86_data').innerHTML = data;
+				}
+        	});
+
+			//$.get('php/get_route_data.php');
+		}, 10000);
+
+
+		
 	</script>
 
 	<?php
