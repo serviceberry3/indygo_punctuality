@@ -42,26 +42,32 @@ $id_selector = "VehicleId";
 $disp_status_selector = "DisplayStatus";
 $laststop_status_selector = "LastStop";
 
-echo 'Route: 86' . PHP_EOL;
-echo '</br>';
+$route = 86;
 
-$num_buses_on_rt = count($response_json);
 
-echo 'Number of buses currently serving 86 route: ' . $num_buses_on_rt . PHP_EOL;
-echo '</br>';
+function print_num_buses_on_rt() {
+    $num_buses_on_rt = count($response_json);
+
+    echo 'Number of buses currently serving route: ' . $num_buses_on_rt . PHP_EOL;
+    echo '</br>';
+}
 
 $num_buses_on_rt = 0;
-foreach ($response_json as $bus) {
-    $num_buses_on_rt += 1;
 
-    echo 'Bus ' . $bus->$id_selector . ': status is \'' . $bus->$disp_status_selector . '\', last stop was ' . 
-        $bus->$laststop_status_selector . PHP_EOL;
-    echo '</br>';
 
-    /*
-    //walk through each key-value pair for the bus
-    foreach ($bus as $key => $val) {
-    }*/
+function list_bus_data() {
+    foreach ($response_json as $bus) {
+        $num_buses_on_rt += 1;
+
+        echo 'Bus ' . $bus->$id_selector . ': status is \'' . $bus->$disp_status_selector . '\', last stop was ' . 
+            $bus->$laststop_status_selector . PHP_EOL;
+        echo '</br>';
+
+        /*
+        //walk through each key-value pair for the bus
+        foreach ($bus as $key => $val) {
+        }*/
+    }
 }
 
 //echo 'Number of buses currently serving 86 route: ' . $num_buses_on_rt . PHP_EOL;

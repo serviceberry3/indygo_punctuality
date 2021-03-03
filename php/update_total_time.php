@@ -7,6 +7,7 @@
     phpinfo();*/
 
     //error_reporting(-1); 
+
     
     $link = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
     
