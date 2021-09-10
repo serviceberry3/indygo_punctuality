@@ -1,4 +1,5 @@
 <!--get jQuery Google CDN-->
+<meta charset="UTF-8"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <?php 
 	include 'templates/header.php';
@@ -15,6 +16,7 @@
 		</h1>
 	</div>
 	<br>
+
 
 	<?php include 'php/get_route_data.php'; ?>
 

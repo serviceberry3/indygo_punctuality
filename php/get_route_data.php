@@ -10,6 +10,8 @@ $headers = array(
     "Connection: close",
 );
 
+//error_log("TESTING ERROR");
+
 //let's check if "rt_to_update" var was set in the AJAX rqst
 if (isset($_GET['rt_to_update'])) {
     //if so, check it's value
